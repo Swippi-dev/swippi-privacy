@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <title>Integritetspolicy – Swippi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #050812;
+      color: #f5f7fb;
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+    h1, h2, h3 {
+      font-weight: 700;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 1.4rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 4px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      color: #c9d4ff;
+    }
+    p {
+      margin: 8px 0 12px;
+      color: #d4d8ec;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 4px 0 12px;
+      color: #d4d8ec;
+    }
+    li {
+      margin-bottom: 4px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #aeb8ff;
+      background: rgba(114,137,218,0.12);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+    .updated {
+      font-size: 0.9rem;
+      color: #9aa3d9;
+      margin-bottom: 16px;
+    }
+    .warning {
+      border-left: 3px solid #ffb347;
+      background: rgba(255,179,71,0.06);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin: 10px 0 12px;
+      color: #f9e3b4;
+      font-size: 0.95rem;
+    }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0 16px;
+      font-size: 0.95rem;
+    }
+    .table th,
+    .table td {
+      border: 1px solid rgba(255,255,255,0.12);
+      padding: 6px 8px;
+      text-align: left;
+    }
+    .table th {
+      background: rgba(255,255,255,0.03);
+      font-weight: 600;
+    }
+    a {
+      color: #9bb4ff;
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #9aa3d9;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="tag">Swippi</div>
+    <h1>Integritetspolicy</h1>
+    <p class="updated">Senast uppdaterad: 21 november 2025</p>
+
+    <p>Vi tar integritet på största allvar. Denna policy förklarar vilken data vi samlar in, varför vi samlar in den och hur den behandlas.</p>
+    <p>Vi följer EU:s dataskyddsförordning (GDPR).</p>
+
+    <h2>1. Personuppgiftsansvarig</h2>
+    <p><strong>Swippi</strong><br />
+       Kontakt för integritetsfrågor: <a href="mailto:swippi.swipe@hotmail.com">swippi.swipe@hotmail.com</a>
+    </p>
+
+    <h2>2. Vilken data vi samlar in</h2>
+
+    <h3>A. Autentiseringsdata</h3>
+    <ul>
+      <li>e-postadress</li>
+      <li>lösenord (lagras av Firebase Authentication, aldrig av oss)</li>
+      <li>Firebase UID</li>
+      <li>login-status (lagras lokalt på enheten)</li>
+    </ul>
+
+    <h3>B. Profildata</h3>
+    <ul>
+      <li>användarnamn (offentligt sökbart)</li>
+      <li>visningsnamn</li>
+      <li>avatar / emoji</li>
+      <li>tidpunkt för senaste uppdatering</li>
+    </ul>
+
+    <h3>C. Vändata</h3>
+    <ul>
+      <li>vänförfrågningar</li>
+      <li>avsändare och mottagare</li>
+      <li>status</li>
+      <li>tidsstämplar</li>
+      <li>vänlista (UID för bekräftade vänner)</li>
+    </ul>
+
+    <h3>D. Gruppdata</h3>
+    <ul>
+      <li>grupp-ID och gruppnamn</li>
+      <li>medlemmar (UID)</li>
+      <li>gruppinbjudningar</li>
+      <li>delningar (recept, anteckningar, text, bilder)</li>
+      <li>swipes (like/dislike), ready-states, matchningar</li>
+      <li>historik över interaktioner i gruppen</li>
+    </ul>
+
+    <h3>E. Användarskapat innehåll</h3>
+    <ul>
+      <li>egna recept</li>
+      <li>ingredienser, instruktioner</li>
+      <li>bilder</li>
+      <li>favoriter</li>
+      <li>måltidsplaner</li>
+    </ul>
+    
+
+    <h3>F. Online-status</h3>
+    <ul>
+      <li>senaste aktivitet</li>
+      <li>synlig online/offline-status för vänner</li>
+    </ul>
+
+    <h3>G. Säkerhetsdata</h3>
+    <ul>
+      <li>rate-limit loggar</li>
+      <li>Cloud Functions-loggar</li>
+      <li>data för missbruksdetektering</li>
+    </ul>
+
+    <h2>3. Varför vi behandlar data (laglig grund)</h2>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Ändamål</th>
+          <th>Laglig grund</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kontohantering</td>
+          <td>Avtal</td>
+        </tr>
+        <tr>
+          <td>Vänsystem</td>
+          <td>Avtal</td>
+        </tr>
+        <tr>
+          <td>Gruppfunktioner</td>
+          <td>Avtal</td>
+        </tr>
+        <tr>
+          <td>Swipe &amp; matchning</td>
+          <td>Avtal</td>
+        </tr>
+        <tr>
+          <td>Notiser &amp; uppladdningar</td>
+          <td>Samtycke</td>
+        </tr>
+        <tr>
+          <td>Online-status</td>
+          <td>Samtycke / Avtal</td>
+        </tr>
+        <tr>
+          <td>Missbruksskydd</td>
+          <td>Berättigat intresse</td>
+        </tr>
+        <tr>
+          <td>GDPR-rättigheter</td>
+          <td>Rättslig skyldighet</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Delning av data</h2>
+
+    <h3>A. Med andra användare</h3>
+    <p>Följande kan delas med vänner och gruppmedlemmar:</p>
+    <ul>
+      <li>ditt användarnamn</li>
+      <li>din avatar</li>
+      <li>din gruppaktivitet</li>
+      <li>dina delningar</li>
+      <li>din online/offline-status</li>
+    </ul>
+
+    <h3>B. Med tredjepart (Firebase / Google)</h3>
+    <p>Vi använder Google Firebase för drift av appen:</p>
+    <ul>
+      <li>Firebase Authentication</li>
+      <li>Cloud Firestore</li>
+      <li>Firebase Storage</li>
+      <li>Cloud Functions</li>
+    </ul>
+    <p>Google fungerar som personuppgiftsbiträde.</p>
+
+    <h2>5. Dataöverföring till USA (GDPR – Schrems II)</h2>
+    <p>Viss behandling sker i USA (us-central1) via Google Firebase. Google LLC är vårt personuppgiftsbiträde.</p>
+
+    <h3>Rättslig grund</h3>
+    <p>Överföringen baseras på:</p>
+    <ul>
+      <li>EU:s Standard Contractual Clauses (SCC)</li>
+      <li>kryptering i transit och vila</li>
+      <li>tekniska och organisatoriska skyddsåtgärder från Google</li>
+    </ul>
+
+    <h3>Riskinformation (Schrems II)</h3>
+    <div class="warning">
+      USA saknar adekvat skyddsnivå enligt EU-domstolen. Det innebär att amerikanska myndigheter i vissa fall kan begära tillgång till data enligt amerikansk lagstiftning (exempelvis FISA 702 eller Executive Order 12333).
+    </div>
+
+    <h3>Skyddsåtgärder vi använder</h3>
+    <p>Vi använder följande skyddsåtgärder för att minimera riskerna:</p>
+    <ul>
+      <li>kryptering av all kommunikation (TLS)</li>
+      <li>krypterad lagring av data (AES256 via Firebase)</li>
+      <li>begränsad insamling av personuppgifter (endast det som behövs)</li>
+      <li>tekniska säkerhetsåtgärder (Firebase Security Rules, autentisering, rate limiting)</li>
+      <li>organisatoriska skyddsåtgärder (åtkomstkontroller, begränsad adminåtkomst)</li>
+      <li>kontinuerlig översyn av säkerhetsrutiner</li>
+    </ul>
+
+    <h2>6. Lagringstider</h2>
+    <ul>
+      <li>swipe-data: 30 dagar</li>
+      <li>ready-states: 1 timme</li>
+      <li>konto: tills användaren själv raderar det</li>
+      <li>recept, favoriter, måltidsplaner: tills användaren tar bort dem</li>
+      <li>lokal cache: tills appen avinstalleras</li>
+    </ul>
+
+    <h2>7. Dina rättigheter</h2>
+    <p>Du har rätt att:</p>
+    <ul>
+      <li>få tillgång till dina personuppgifter</li>
+      <li>rätta felaktiga uppgifter</li>
+      <li>radera konto och data (“rätten att bli bortglömd”)</li>
+      <li>få ut data i maskinläsbart format (dataportabilitet)</li>
+      <li>begränsa behandling</li>
+      <li>lämna klagomål till Integritetsskyddsmyndigheten (IMY)</li>
+    </ul>
+
+    <h2>8. Säkerhet</h2>
+    <p>Vi använder flera skyddsåtgärder:</p>
+    <ul>
+      <li>krypterad kommunikation (TLS)</li>
+      <li>krypterad lagring (AES256)</li>
+      <li>åtkomstbegränsning via Firebase Authentication</li>
+      <li>Firestore Security Rules</li>
+      <li>logging &amp; rate limiting</li>
+      <li>automatiska rensningar i Cloud Functions</li>
+    </ul>
+
+    <h2>9. Radering av konto</h2>
+    <p>När du raderar ditt konto tas:</p>
+    <ul>
+      <li>Firebase Auth-kontot bort</li>
+      <li>profildata raderas</li>
+      <li>egna recept raderas</li>
+      <li>måltidsplaner och favoriter raderas</li>
+      <li>gruppdata anonymiseras vid behov</li>
+    </ul>
+
+    <h2>10. Ändringar</h2>
+    <p>Vi kan uppdatera denna policy. Vid större ändringar meddelas du i appen.</p>
+
+    <h2>11. Kontakt</h2>
+    <p>För frågor om integritet och dataskydd:</p>
+    <p>
+      📧 <a href="mailto:swippi.swipe@hotmail.com">swippi.swipe@hotmail.com</a><br />
+      Swippi
+    </p>
+
+    <footer>
+      Denna sida är avsedd att användas som Integritetspolicy för Swippi-appen.
+    </footer>
+  </main>
+</body>
+</html>
