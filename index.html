@@ -18,33 +18,29 @@
       padding: 32px 20px 64px;
     }
     .header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 32px;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.header .logo {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.header nav a {
-  margin-left: 20px;
-  color: #9bb4ff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: opacity 0.2s ease;
-}
-
-.header nav a:hover {
-  opacity: 0.6;
-}
-
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .header .logo {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .header nav a {
+      margin-left: 20px;
+      color: #9bb4ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+    .header nav a:hover {
+      opacity: 0.6;
+    }
     h1, h2, h3 {
       font-weight: 700;
       margin-top: 24px;
@@ -132,10 +128,11 @@
 </head>
 <body>
   <main class="page">
+
     <nav style="margin-bottom: 20px;">
-  <a href="index.html" style="margin-right: 20px; color: #9bb4ff;">Integritetspolicy</a>
-  <a href="terms.html" style="color: #9bb4ff;">Användarvillkor</a>
-  </nav>
+      <a href="index.html" style="margin-right: 20px; color: #9bb4ff;">Integritetspolicy</a>
+      <a href="terms.html" style="color: #9bb4ff;">Användarvillkor</a>
+    </nav>
 
     <div class="tag">Swippi</div>
     <h1>Integritetspolicy</h1>
@@ -283,6 +280,13 @@
     <h2>6. Lagringstider</h2>
     <ul>
       <li>swipe-data: 30 dagar</li>
+
+      <li>
+        säkerhetsloggar och auditLogs: lagras i upp till 30 dagar och raderas automatiskt.
+        Dessa loggar används endast för att upptäcka, förebygga och hantera missbruk,
+        tekniska fel och säkerhetsincidenter.
+      </li>
+
       <li>ready-states: 1 timme</li>
       <li>konto: tills användaren själv raderar det</li>
       <li>recept, favoriter, måltidsplaner: tills användaren tar bort dem</li>
@@ -322,7 +326,7 @@
     </ul>
 
     <h2>10. Ändringar</h2>
-    <p>Vi kan uppdatera denna policy. Vid större ändringar meddelas du i appen.</p>
+    <p>Vi kan uppdatera denna policy. Vid grövre ändringar meddelas du i appen.</p>
 
     <h2>11. Kontakt</h2>
     <p>För frågor om integritet och dataskydd:</p>
